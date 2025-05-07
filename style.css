@@ -1,0 +1,37 @@
+ button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    /* CSS Animation Classes */
+    .bounce {
+      animation: bounce 0.6s;
+    }
+
+    .spin {
+      animation: spin 1s ease-in-out;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
